@@ -10,7 +10,12 @@
                     "SubCondition": null,
                     "SubCode": null,
                     "SubConcept": null,
-                    "AnatomicalAreas": []
+                    "AnatomicalAreas": [
+                        {
+                            "Name": "Genitalia",
+                            "Code": "27"
+                        }
+                    ]
                 }
             ]
         },
@@ -43,37 +48,32 @@
                     "SubCondition": null,
                     "SubCode": null,
                     "SubConcept": null,
-                    "AnatomicalAreas": []
-                },
-                {
-                    "SubCondition": null,
-                    "SubCode": null,
-                    "SubConcept": null,
-                    "AnatomicalAreas": []
-                },
-                {
-                    "SubCondition": null,
-                    "SubCode": null,
-                    "SubConcept": null,
-                    "AnatomicalAreas": []
-                },
-                {
-                    "SubCondition": null,
-                    "SubCode": null,
-                    "SubConcept": null,
-                    "AnatomicalAreas": []
-                },
-                {
-                    "SubCondition": null,
-                    "SubCode": null,
-                    "SubConcept": null,
-                    "AnatomicalAreas": []
-                },
-                {
-                    "SubCondition": null,
-                    "SubCode": null,
-                    "SubConcept": null,
-                    "AnatomicalAreas": []
+                    "AnatomicalAreas": [
+                        {
+                            "Name": "Knee",
+                            "Code": "31"
+                        },
+                        {
+                            "Name": "Foot",
+                            "Code": "34"
+                        },
+                        {
+                            "Name": "Toe",
+                            "Code": "35"
+                        },
+                        {
+                            "Name": "Upper Arm",
+                            "Code": "12"
+                        },
+                        {
+                            "Name": "Neck",
+                            "Code": "09"
+                        },
+                        {
+                            "Name": "Ankle",
+                            "Code": "33"
+                        }
+                    ]
                 }
             ]
         },
@@ -128,19 +128,20 @@
                     "SubCondition": null,
                     "SubCode": null,
                     "SubConcept": null,
-                    "AnatomicalAreas": []
-                },
-                {
-                    "SubCondition": null,
-                    "SubCode": null,
-                    "SubConcept": null,
-                    "AnatomicalAreas": []
-                },
-                {
-                    "SubCondition": null,
-                    "SubCode": null,
-                    "SubConcept": null,
-                    "AnatomicalAreas": []
+                    "AnatomicalAreas": [
+                        {
+                            "Name": "Ano/rectal",
+                            "Code": "26"
+                        },
+                        {
+                            "Name": "Nose",
+                            "Code": "06"
+                        },
+                        {
+                            "Name": "Ear",
+                            "Code": "05"
+                        }
+                    ]
                 }
             ]
         },
@@ -154,19 +155,20 @@
                     "SubCondition": null,
                     "SubCode": null,
                     "SubConcept": null,
-                    "AnatomicalAreas": []
-                },
-                {
-                    "SubCondition": null,
-                    "SubCode": null,
-                    "SubConcept": null,
-                    "AnatomicalAreas": []
-                },
-                {
-                    "SubCondition": null,
-                    "SubCode": null,
-                    "SubConcept": null,
-                    "AnatomicalAreas": []
+                    "AnatomicalAreas": [
+                        {
+                            "Name": "Nose",
+                            "Code": "06"
+                        },
+                        {
+                            "Name": "Shoulder",
+                            "Code": "10"
+                        },
+                        {
+                            "Name": "Thigh",
+                            "Code": "30"
+                        }
+                    ]
                 }
             ]
         },
@@ -180,7 +182,12 @@
                     "SubCondition": null,
                     "SubCode": null,
                     "SubConcept": null,
-                    "AnatomicalAreas": []
+                    "AnatomicalAreas": [
+                        {
+                            "Name": "Genitalia",
+                            "Code": "27"
+                        }
+                    ]
                 }
             ]
         },
@@ -194,7 +201,12 @@
                     "SubCondition": null,
                     "SubCode": null,
                     "SubConcept": null,
-                    "AnatomicalAreas": []
+                    "AnatomicalAreas": [
+                        {
+                            "Name": "Pelvis",
+                            "Code": "21"
+                        }
+                    ]
                 }
             ]
         },

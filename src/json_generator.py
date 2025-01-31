@@ -31,10 +31,10 @@ def process_data(csv_data, json_data):
     # Initialize output JSON structure
     json_output["DiagnosisConditions"] = {}
 
-    for source_code, diagnosis_code, subanalysis_code, anatomical_code in csv_data:  # noqa E501
+    for source_code, diagnosis_code, subanalysis_code, anatomical_code in csv_data:  # noqa: E501
         source_code = source_code.strip()
         diagnosis_code = diagnosis_code.strip()
-        subanalysis_code = subanalysis_code.strip() if subanalysis_code else None  # noqa E501
+        subanalysis_code = subanalysis_code.strip() if subanalysis_code else None  # noqa: E501
         anatomical_code = anatomical_code.strip() if anatomical_code else None
 
         # Look up the diagnosis condition
@@ -47,31 +47,27 @@ def process_data(csv_data, json_data):
 
         # Enrich the data for the CSV
         subanalysis_entry = None
-        alias = diagnosis_entry['Alias'] if 'Alias' in diagnosis_entry else diagnosis_entry['Condition']  # noqa E501
-        combined_diagnosis = alias  # Default to the alias
+        combined_diagnosis = diagnosis_entry[
+            'Alias'
+        ] if 'Alias' in diagnosis_entry else diagnosis_entry['Condition']
 
         if subanalysis_code:
             # Find the matching subanalysis in JSON lookup
             subanalysis_entry = next(
                 (
                     sub for sub in diagnosis_entry.get(
-                        "SubAnalysis",
-                        []
+                        "SubAnalysis", []
                     ) if sub["SubCode"] == subanalysis_code
                 ),
                 None
             )
+            if subanalysis_entry:
+                combined_diagnosis = subanalysis_entry[
+                    'SubCondition'
+                ] if subanalysis_entry['SubCondition'] else combined_diagnosis
 
-        # Apply the CombinedDiagnosis rules
-        subcondition = subanalysis_entry['SubCondition'] if subanalysis_entry else None  # noqa E501
-        if subcondition and anatomical_name:
-            combined_diagnosis = f"{subcondition} of {anatomical_name}"
-        elif subcondition:
-            combined_diagnosis = subcondition
-        elif anatomical_name:
-            combined_diagnosis = f"{alias} of {anatomical_name}"
-        else:
-            combined_diagnosis = alias
+        if anatomical_name:
+            combined_diagnosis = f"{combined_diagnosis} of {anatomical_name}"
 
         enriched_rows.append({
             'SourceCode': source_code,
@@ -80,7 +76,7 @@ def process_data(csv_data, json_data):
             'AnatomicalArea': anatomical_code if anatomical_code else '',
             'CombinedDiagnosis': combined_diagnosis,
             'ParentConcept': diagnosis_entry.get('ParentConcept', ''),
-            'SubConcept': subanalysis_entry['SubConcept'] if subanalysis_entry and 'SubConcept' in subanalysis_entry else '' # noqa E501
+            'SubConcept': subanalysis_entry['SubConcept'] if subanalysis_entry and 'SubConcept' in subanalysis_entry else ''  # noqa: E501
         })
 
         # Build hierarchical JSON structure
@@ -105,9 +101,9 @@ def process_data(csv_data, json_data):
             )
             if not subanalysis_object:
                 subanalysis_object = {
-                    "SubCondition": subanalysis_entry["SubCondition"] if subanalysis_entry else None,  # noqa E501
+                    "SubCondition": subanalysis_entry["SubCondition"] if subanalysis_entry else None,  # noqa: E501
                     "SubCode": subanalysis_code,
-                    "SubConcept": subanalysis_entry["SubConcept"] if subanalysis_entry else None,  # noqa E501
+                    "SubConcept": subanalysis_entry["SubConcept"] if subanalysis_entry else None,  # noqa: E501
                     "AnatomicalAreas": []
                 }
                 condition_object["SubAnalysis"].append(subanalysis_object)
@@ -117,21 +113,34 @@ def process_data(csv_data, json_data):
                     "Name": anatomical_name,
                     "Code": anatomical_code
                 }
-                if anatomical_area_object not in subanalysis_object["AnatomicalAreas"]:  # noqa E501
-                    subanalysis_object["AnatomicalAreas"].append(anatomical_area_object)  # noqa E501
+                if anatomical_area_object not in subanalysis_object["AnatomicalAreas"]:  # noqa: E501
+                    subanalysis_object["AnatomicalAreas"].append(anatomical_area_object)  # noqa: E501
         else:
             # If no subanalysis, ensure a placeholder exists
-            if {
-                "SubCode": None,
-                "AnatomicalAreas": []
-            } not in condition_object["SubAnalysis"]:
-
-                condition_object["SubAnalysis"].append({
+            placeholder = next(
+                (
+                    sub for sub in condition_object[
+                        "SubAnalysis"
+                    ] if sub["SubCode"] is None
+                ),
+                None
+            )
+            if not placeholder:
+                placeholder = {
                     "SubCondition": None,
                     "SubCode": None,
                     "SubConcept": None,
                     "AnatomicalAreas": []
-                })
+                }
+                condition_object["SubAnalysis"].append(placeholder)
+
+            if anatomical_code and anatomical_name:
+                anatomical_area_object = {
+                    "Name": anatomical_name,
+                    "Code": anatomical_code
+                }
+                if anatomical_area_object not in placeholder["AnatomicalAreas"]:  # noqa: E501
+                    placeholder["AnatomicalAreas"].append(anatomical_area_object)  # noqa: E501
 
     json_output["DiagnosisConditions"] = list(
         json_output["DiagnosisConditions"].values()
