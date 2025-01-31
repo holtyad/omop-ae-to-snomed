@@ -21,4 +21,4 @@ jobs:
           python3 -m pip install --upgrade pip -r requirements.txt
       - name: Test with pytest
         run: |
-          python3 -m pytest ./tests/test_json_generator.py 
+          python3 -m pytest ./tests/test_json_generator.py -vv
