@@ -1,0 +1,22 @@
+SourceCode,CombinedDiagnosis,ConceptCode
+02 06,Contusion of Nose,60897004
+02 10,Contusion of Shoulder,125667009
+02 30,Contusion of Thigh,84416003
+03 27,Soft tissue inflammation of Genitalia,19660004
+05133,Dislocation of Ankle,87642003
+05234,Open fracture of Foot,367527001
+05318,Closed fracture of Cervical spine,269062008
+07 09,Tendon injury of Neck,312847008
+07 12,Tendon injury of Upper Arm,312847008
+07 31,Tendon injury of Knee,312847008
+07 33,Tendon injury of Ankle,312847008
+07 34,Tendon injury of Foot,312847008
+07 35,Tendon injury of Toe,312847008
+12 05,Foreign body of Ear,125670008
+12 06,Foreign body of Nose,74699008
+12 26,Foreign body of Ano/rectal,125670008
+25222,Other non-asthma of Chest,50043002
+28 27,Obstetric of Genitalia,1078831000000107
+29 21,Gynaecological of Pelvis,1078831000000107
+34,"Ear, Nose & Throat",232208008
+39,Nothing abnormal detected,

@@ -1,0 +1,22 @@
+SourceCode,DiagnosisCondition,SubAnalysis,AnatomicalArea,CombinedDiagnosis,ParentConcept,SubConcept
+03 27,03,,27,Soft tissue inflammation of Genitalia,19660004,
+25222,25,2,22,Other non-asthma of Chest,50043002,50043002
+07 31,07,,31,Tendon injury of Knee,312847008,
+07 34,07,,34,Tendon injury of Foot,312847008,
+05234,05,2,34,Open fracture of Foot,87642003,397181002
+12 26,12,,26,Foreign body of Ano/rectal,125670008,
+05133,05,1,33,Dislocation of Ankle,87642003,87642003
+02 06,02,,06,Contusion of Nose,125667009,
+07 35,07,,35,Tendon injury of Toe,312847008,
+05318,05,3,18,Closed fracture of Cervical spine,87642003,423125000
+12 06,12,,06,Foreign body of Nose,125670008,
+12 05,12,,05,Foreign body of Ear,125670008,
+07 12,07,,12,Tendon injury of Upper Arm,312847008,
+07 09,07,,09,Tendon injury of Neck,312847008,
+07 33,07,,33,Tendon injury of Ankle,312847008,
+28 27,28,,27,Obstetric of Genitalia,1078831000000107,
+02 10,02,,10,Contusion of Shoulder,125667009,
+29 21,29,,21,Gynaecological of Pelvis,1078831000000107,
+02 30,02,,30,Contusion of Thigh,125667009,
+34,34,,,"Ear, Nose & Throat",232208008,
+39,39,,,Nothing abnormal detected,,

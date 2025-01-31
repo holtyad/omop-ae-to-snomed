@@ -1,0 +1,230 @@
+{
+    "DiagnosisConditions": [
+        {
+            "Condition": "Soft tissue inflammation",
+            "Code": "03",
+            "Alias": "Soft tissue inflammation",
+            "ParentConcept": "19660004",
+            "SubAnalysis": [
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                }
+            ]
+        },
+        {
+            "Condition": "Respiratory conditions",
+            "Code": "25",
+            "Alias": "Asthma",
+            "ParentConcept": "50043002",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Other non-asthma",
+                    "SubCode": "2",
+                    "SubConcept": "50043002",
+                    "AnatomicalAreas": [
+                        {
+                            "Name": "Chest",
+                            "Code": "22"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Condition": "Muscle/tendon injury",
+            "Code": "07",
+            "Alias": "Tendon injury",
+            "ParentConcept": "312847008",
+            "SubAnalysis": [
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                },
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                },
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                },
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                },
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                },
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                }
+            ]
+        },
+        {
+            "Condition": "Dislocation/fracture/joint injury/amputation",
+            "Code": "05",
+            "Alias": "Dislocation",
+            "ParentConcept": "87642003",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Open fracture",
+                    "SubCode": "2",
+                    "SubConcept": "397181002",
+                    "AnatomicalAreas": [
+                        {
+                            "Name": "Foot",
+                            "Code": "34"
+                        }
+                    ]
+                },
+                {
+                    "SubCondition": "Dislocation",
+                    "SubCode": "1",
+                    "SubConcept": "87642003",
+                    "AnatomicalAreas": [
+                        {
+                            "Name": "Ankle",
+                            "Code": "33"
+                        }
+                    ]
+                },
+                {
+                    "SubCondition": "Closed fracture",
+                    "SubCode": "3",
+                    "SubConcept": "423125000",
+                    "AnatomicalAreas": [
+                        {
+                            "Name": "Cervical spine",
+                            "Code": "18"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Condition": "Foreign body",
+            "Code": "12",
+            "Alias": "Foreign body",
+            "ParentConcept": "125670008",
+            "SubAnalysis": [
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                },
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                },
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                }
+            ]
+        },
+        {
+            "Condition": "Contusion/abrasion",
+            "Code": "02",
+            "Alias": "Contusion",
+            "ParentConcept": "125667009",
+            "SubAnalysis": [
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                },
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                },
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                }
+            ]
+        },
+        {
+            "Condition": "Obstetric conditions",
+            "Code": "28",
+            "Alias": "Obstetric",
+            "ParentConcept": "1078831000000107",
+            "SubAnalysis": [
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                }
+            ]
+        },
+        {
+            "Condition": "Gynaecological conditions",
+            "Code": "29",
+            "Alias": "Gynaecological",
+            "ParentConcept": "1078831000000107",
+            "SubAnalysis": [
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                }
+            ]
+        },
+        {
+            "Condition": "ENT conditions",
+            "Code": "34",
+            "Alias": "Ear, Nose & Throat",
+            "ParentConcept": "232208008",
+            "SubAnalysis": [
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                }
+            ]
+        },
+        {
+            "Condition": "Nothing abnormal detected",
+            "Code": "39",
+            "Alias": "Nothing abnormal detected",
+            "ParentConcept": null,
+            "SubAnalysis": [
+                {
+                    "SubCondition": null,
+                    "SubCode": null,
+                    "SubConcept": null,
+                    "AnatomicalAreas": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,555 @@
+{
+    "DiagnosisConditions": [
+        {
+            "Condition": "Laceration",
+            "Code": "01",
+            "Alias": "Laceration",
+            "ParentConcept": "35933005"
+        },
+        {
+            "Condition": "Contusion/abrasion",
+            "Code": "02",
+            "Alias": "Contusion",
+            "ParentConcept": "125667009",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Contusion",
+                    "SubCode": "1",
+                    "SubConcept": "125667009"
+                },
+                {
+                    "SubCondition": "Abrasion",
+                    "SubCode": "2",
+                    "SubConcept": "399963005"
+                }
+            ]
+        },
+        {
+            "Condition": "Soft tissue inflammation",
+            "Code": "03",
+            "Alias": "Soft tissue inflammation",
+            "ParentConcept": "19660004"
+        },
+        {
+            "Condition": "Head injury",
+            "Code": "04",
+            "Alias": "Head injury",
+            "ParentConcept": "82271004",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Concussion",
+                    "SubCode": "1",
+                    "SubConcept": "110030002"
+                },
+                {
+                    "SubCondition": "Other head injury",
+                    "SubCode": "2",
+                    "SubConcept": "82271004"
+                }
+            ]
+        },
+        {
+            "Condition": "Dislocation/fracture/joint injury/amputation",
+            "Code": "05",
+            "Alias": "Dislocation",
+            "ParentConcept": "87642003",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Dislocation",
+                    "SubCode": "1",
+                    "SubConcept": "87642003"
+                },
+                {
+                    "SubCondition": "Open fracture",
+                    "SubCode": "2",
+                    "SubConcept": "397181002"
+                },
+                {
+                    "SubCondition": "Closed fracture",
+                    "SubCode": "3",
+                    "SubConcept": "423125000"
+                },
+                {
+                    "SubCondition": "Joint injury",
+                    "SubCode": "4",
+                    "SubConcept": "125610000"
+                },
+                {
+                    "SubCondition": "Amputation",
+                    "SubCode": "5",
+                    "SubConcept": "81723002"
+                }
+            ]
+        },
+        {
+            "Condition": "Sprain/ligament injury",
+            "Code": "06",
+            "Alias": "Sprain",
+            "ParentConcept": "384709000"
+        },
+        {
+            "Condition": "Muscle/tendon injury",
+            "Code": "07",
+            "Alias": "Tendon injury",
+            "ParentConcept": "312847008"
+        },
+        {
+            "Condition": "Nerve injury",
+            "Code": "08",
+            "Alias": "Nerve injury",
+            "ParentConcept": "57182000"
+        },
+        {
+            "Condition": "Vascular injury",
+            "Code": "09",
+            "Alias": "Vascular injury",
+            "ParentConcept": "57662003"
+        },
+        {
+            "Condition": "Burns and scalds",
+            "Code": "10",
+            "Alias": "Burns",
+            "ParentConcept": "125666000",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Electric Burn",
+                    "SubCode": "1",
+                    "SubConcept": "405571006"
+                },
+                {
+                    "SubCondition": "Thermal Burn",
+                    "SubCode": "2",
+                    "SubConcept": "314534006"
+                },
+                {
+                    "SubCondition": "Chemical Burn",
+                    "SubCode": "3",
+                    "SubConcept": "426284001"
+                },
+                {
+                    "SubCondition": "Radiation Burn",
+                    "SubCode": "4",
+                    "SubConcept": "425656005"
+                }
+            ]
+        },
+        {
+            "Condition": "Electric shock",
+            "Code": "11",
+            "Alias": "Electric shock",
+            "ParentConcept": "212982006"
+        },
+        {
+            "Condition": "Foreign body",
+            "Code": "12",
+            "Alias": "Foreign body",
+            "ParentConcept": "125670008"
+        },
+        {
+            "Condition": "Bites/stings",
+            "Code": "13",
+            "Alias": "Bites",
+            "ParentConcept": "782161000"
+
+        },
+        {
+            "Condition": "Poisoning",
+            "Code": "14",
+            "Alias": "Poisoning",
+            "ParentConcept": "75478009",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Prescriptive drugs",
+                    "SubCode": "1",
+                    "SubConcept": "7895008"
+                },
+                {
+                    "SubCondition": "Proprietary drugs",
+                    "SubCode": "2",
+                    "SubConcept": "7895008"
+                },
+                {
+                    "SubCondition": "Controlled drugs",
+                    "SubCode": "3",
+                    "SubConcept": "7895008"
+                },
+                {
+                    "SubCondition": "Other, including alcohol",
+                    "Alias": "Alcohol",
+                    "SubCode": "4",
+                    "SubConcept": "436585"
+                }
+            ]
+        },
+        {
+            "Condition": "Near drowning",
+            "Code": "15",
+            "ParentConcept": "87970004"
+        },
+        {
+            "Condition": "Visceral injury",
+            "Code": "16",
+            "Alias": "Visceral injury",
+            "ParentConcept": "105612003"
+        },
+        {
+            "Condition": "Infectious disease",
+            "Code": "17",
+            "Alias": "Infectious Disease",
+            "ParentConcept": "40733004",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Notifiable disease",
+                    "SubCode": "1",
+                    "SubConcept": "719951000000109"
+                },
+                {
+                    "SubCondition": "Non-notifiable disease",
+                    "SubCode": "2",
+                    "SubConcept": "40733004"
+                }
+            ]
+        },
+        {
+            "Condition": "Local infection",
+            "Code": "18",
+            "Alias": "Local infection",
+            "ParentConcept": "76844004"
+        },
+        {
+            "Condition": "Septicaemia",
+            "Code": "19",
+            "Alias": "Septicaemia",
+            "ParentConcept": "132797"
+        },
+        {
+            "Condition": "Cardiac conditions",
+            "Code": "20",
+            "Alias": "Cardiac conditions",
+            "ParentConcept": "301095005",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Myocardial ischaemia & infarction",
+                    "SubCode": "1",
+                    "SubConcept": "428196007"
+                },
+                {
+                    "SubCondition": "Other non-ischaemia",
+                    "SubCode": "2",
+                    "SubConcept": "441545004"
+                }
+            ]
+        },
+        {
+            "Condition": "Cerebro-vascular conditions",
+            "Code": "21",
+            "Alias": "Cerebro-vascular condition",
+            "ParentConcept": "230690007"
+        },
+        {
+            "Condition": "Other vascular conditions",
+            "Code": "22",
+            "Alias": "Other vascular condition",
+            "ParentConcept": "27550009"
+        },
+        {
+            "Condition": "Haematological conditions",
+            "Code": "23",
+            "Alias": "Haematological",
+            "ParentConcept": "57407000"
+        },
+        {
+            "Condition": "Central Nervous System conditions",
+            "Code": "24",
+            "Alias": "Central Nervous System",
+            "ParentConcept": "87536007",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Epilepsy",
+                    "SubCode": "1",
+                    "SubConcept": "84757009"
+                },
+                {
+                    "SubCondition": "Other non-epilepsy",
+                    "SubCode": "2",
+                    "SubConcept": "87536007"
+                }
+            ]
+        },
+        {
+            "Condition": "Respiratory conditions",
+            "Code": "25",
+            "Alias": "Asthma",
+            "ParentConcept": "50043002",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Bronchial asthma",
+                    "SubCode": "1",
+                    "SubConcept": "195967001"
+                },
+                {
+                    "SubCondition": "Other non-asthma",
+                    "SubCode": "2",
+                    "SubConcept": "50043002"
+                }
+            ]
+        },
+        {
+            "Condition": "Gastrointestinal conditions",
+            "Code": "26",
+            "Alias": "Gastrointestinal condition",
+            "ParentConcept": "24813008",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Haemorrhage",
+                    "SubCode": "1",
+                    "SubConcept": "74474003"
+                },
+                {
+                    "SubCondition": "Acute abdominal pain",
+                    "SubCode": "2",
+                    "SubConcept": "116290004"
+                },
+                {
+                    "SubCondition": "Other",
+                    "SubCode": "3",
+                    "SubConcept": "24813008"
+                }
+            ]
+        },
+        {
+            "Condition": "Urological conditions (including cystitis)",
+            "Code": "27",
+            "Alias": "Urological",
+            "ParentConcept": "251956004"
+        },
+        {
+            "Condition": "Obstetric conditions",
+            "Code": "28",
+            "Alias": "Obstetric",
+            "ParentConcept": "1078831000000107"
+        },
+        {
+            "Condition": "Gynaecological conditions",
+            "Code": "29",
+            "Alias": "Gynaecological",
+            "ParentConcept": "1078831000000107"
+        },
+        {
+            "Condition": "Diabetes and other endocrinological conditions",
+            "Code": "30",
+            "Alias": "Diabetes",
+            "ParentConcept": "309048008",
+            "SubAnalysis": [
+                {
+                    "SubCondition": "Diabetic",
+                    "SubCode": "1",
+                    "SubConcept": "73211009"
+                },
+                {
+                    "SubCondition": "Other non-diabetic",
+                    "SubCode": "2",
+                    "SubConcept": "309048008"
+                }
+            ]
+        },
+        {
+            "Condition": "Dermatological conditions",
+            "Code": "31",
+            "Alias": "Dermatological",
+            "ParentConcept": "95320005"
+        },
+        {
+            "Condition": "Allergy (including anaphylaxis)",
+            "Code": "32",
+            "Alias": "Allergy",
+            "ParentConcept": "781474001"
+        },
+        {
+            "Condition": "Facio-maxillary conditions",
+            "Code": "33",
+            "Alias": "Facio-maxillary",
+            "ParentConcept": "128234004"
+        },
+        {
+            "Condition": "ENT conditions",
+            "Code": "34",
+            "Alias": "Ear, Nose & Throat",
+            "ParentConcept": "232208008"
+        },
+        {
+            "Condition": "Psychiatric conditions",
+            "Code": "35",
+            "Alias": "Mental disorder",
+            "ParentConcept": "74732009"
+        },
+        {
+            "Condition": "Ophthalmological conditions",
+            "Code": "36",
+            "Alias": "Ophthalmological",
+            "ParentConcept": "371409005"
+        },
+        {
+            "Condition": "Social problem (includes chronic alcoholism and homelessness)",
+            "Code": "37",
+            "Alias": "Social problem",
+            "ParentConcept": "162218007"
+        },
+        {
+            "Condition": "Diagnosis not classifiable",
+            "Code": "38",
+            "Alias": "Diagnosis not classifiable"
+        },
+        {
+            "Condition": "Nothing abnormal detected",
+            "Code": "39",
+            "Alias": "Nothing abnormal detected"
+        }
+    ],
+    "AnatomicalAreas": [
+        {
+            "Name": "Brain",
+            "Code": "01"
+        },
+        {
+            "Name": "Head",
+            "Code": "02"
+        },
+        {
+            "Name": "Face",
+            "Code": "03"
+        },
+        {
+            "Name": "Eye",
+            "Code": "04"
+        },
+        {
+            "Name": "Ear",
+            "Code": "05"
+        },
+        {
+            "Name": "Nose",
+            "Code": "06"
+        },
+        {
+            "Name": "Mouth, Jaw, Teeth",
+            "Code": "07"
+        },
+        {
+            "Name": "Throat",
+            "Code": "08"
+        },
+        {
+            "Name": "Neck",
+            "Code": "09"
+        },
+        {
+            "Name": "Shoulder",
+            "Code": "10"
+        },
+        {
+            "Name": "Axilla",
+            "Code": "11"
+        },
+        {
+            "Name": "Upper Arm",
+            "Code": "12"
+        },
+        {
+            "Name": "Elbow",
+            "Code": "13"
+        },
+        {
+            "Name": "Forearm",
+            "Code": "14"
+        },
+        {
+            "Name": "Wrist",
+            "Code": "15"
+        },
+        {
+            "Name": "Hand",
+            "Code": "16"
+        },
+        {
+            "Name": "Digit",
+            "Code": "17"
+        },
+        {
+            "Name": "Cervical spine",
+            "Code": "18"
+        },
+        {
+            "Name": "Thoracic",
+            "Code": "19"
+        },
+        {
+            "Name": "Lumbosacral spine",
+            "Code": "20"
+        },
+        {
+            "Name": "Pelvis",
+            "Code": "21"
+        },
+        {
+            "Name": "Chest",
+            "Code": "22"
+        },
+        {
+            "Name": "Breast",
+            "Code": "23"
+        },
+        {
+            "Name": "Abdomen",
+            "Code": "24"
+        },
+        {
+            "Name": "Back/buttocks",
+            "Code": "25"
+        },
+        {
+            "Name": "Ano/rectal",
+            "Code": "26"
+        },
+        {
+            "Name": "Genitalia",
+            "Code": "27"
+        },
+        {
+            "Name": "Hip",
+            "Code": "28"
+        },
+        {
+            "Name": "Groin",
+            "Code": "29"
+        },
+        {
+            "Name": "Thigh",
+            "Code": "30"
+        },
+        {
+            "Name": "Knee",
+            "Code": "31"
+        },
+        {
+            "Name": "Lower leg",
+            "Code": "32"
+        },
+        {
+            "Name": "Ankle",
+            "Code": "33"
+        },
+        {
+            "Name": "Foot",
+            "Code": "34"
+        },
+        {
+            "Name": "Toe",
+            "Code": "35"
+        },
+        {
+            "Name": "Multiple Site",
+            "Code": "36"
+        }
+    ]
+}
