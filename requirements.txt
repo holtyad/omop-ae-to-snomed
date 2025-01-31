@@ -22,7 +22,6 @@ python-Levenshtein==0.26.1
 pytz==2024.2
 RapidFuzz==3.11.0
 rich==13.9.4
-rpy2==3.5.16
 shellingham==1.5.4
 six==1.16.0
 thefuzz==0.22.1
